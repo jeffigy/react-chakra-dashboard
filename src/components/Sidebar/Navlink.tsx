@@ -1,4 +1,4 @@
-import { Button, Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 import { NavLink, useLocation } from "react-router-dom";
 type NavlinksProps = {
   name: string;
@@ -30,6 +30,8 @@ export default function Navlink({ name, icon, to }: NavlinksProps) {
     //   </Flex>
     // </NavLink>
     <Button
+      alignContent={"start"}
+      // leftIcon={<Icon as={icon} mr={"15px"} />}
       as={NavLink}
       size={"lg"}
       colorScheme="gray"

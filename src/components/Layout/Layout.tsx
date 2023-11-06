@@ -1,5 +1,4 @@
 import {
-  Box,
   Drawer,
   DrawerContent,
   DrawerOverlay,

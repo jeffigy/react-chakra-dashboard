@@ -1,9 +1,10 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import {
   Flex,
+  IconButton,
   Input,
   InputGroup,
-  InputLeftElement,
+  InputRightElement,
   useColorModeValue,
 } from "@chakra-ui/react";
 
@@ -16,14 +17,32 @@ export default function SearchBar() {
       maxW={{ md: "200px", lg: "400px" }}
     >
       <InputGroup>
-        <InputLeftElement pointerEvents={"none"} children={<SearchIcon />} />
         <Input
+          borderRadius={"full"}
           variant={"outline"}
           placeholder="Seach something..."
           border={"none"}
           color={useColorModeValue("black", "white")}
-          // _placeholder={ useColorModeValue("gray.400", "gray.600")}
           focusBorderColor={useColorModeValue("black", "white")}
+          _focus={{
+            bg: useColorModeValue("gray.200", "gray.700"),
+            color: useColorModeValue("black", "white"),
+          }}
+        />
+        <InputRightElement
+          children={
+            <IconButton
+              variant={"ghost"}
+              aria-label="search-button"
+              icon={<SearchIcon />}
+              sx={{
+                borderTopRightRadius: "9999px",
+                borderBottomRightRadius: "9999px",
+                borderTopLeftRadius: 0,
+                borderBottomLeftRadius: 0,
+              }}
+            />
+          }
         />
       </InputGroup>
     </Flex>

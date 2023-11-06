@@ -1,10 +1,4 @@
-import {
-  Box,
-  CloseButton,
-  Flex,
-  Stack,
-  Text
-} from "@chakra-ui/react";
+import { Box, CloseButton, Flex, Stack, Text } from "@chakra-ui/react";
 import {
   Calendar,
   Edit,
