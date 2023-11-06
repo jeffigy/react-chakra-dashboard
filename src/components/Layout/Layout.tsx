@@ -56,7 +56,7 @@ export default function Layout({ children }: LayoutProps) {
         flex={1}
         flexDirection={"column"}
         ml={{ base: 0, md: 60 }}
-        p={"20px"}
+        // p={"20px"}
       >
         {children}
       </Flex>
