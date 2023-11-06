@@ -1,4 +1,4 @@
-import { Flex, useColorModeValue } from "@chakra-ui/react";
+import { Flex} from "@chakra-ui/react";
 import PageTitle from "./PageTitle";
 import SearchBar from "./SearchBar";
 import RightButtons from "./RightButtons";
