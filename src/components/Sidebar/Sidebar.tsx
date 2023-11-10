@@ -11,7 +11,7 @@ import Navlinks from "./Navlink";
 
 const NavItems = [
   { name: "Home", icon: Home, to: "/" },
-  { name: "Schedule", icon: Calendar, to: "/schedule" },
+  { name: "Forgot Password", icon: Calendar, to: "/forgot-password" },
   { name: "Chat", icon: MessageSquare, to: "/chats" },
   { name: "Settings", icon: Settings, to: "/settings" },
   { name: "Login", icon: LogIn, to: "/login" },

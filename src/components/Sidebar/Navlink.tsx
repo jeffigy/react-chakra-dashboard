@@ -1,4 +1,4 @@
-import { Button, Text } from "@chakra-ui/react";
+import { Button,  Text } from "@chakra-ui/react";
 import { NavLink, useLocation } from "react-router-dom";
 type NavlinksProps = {
   name: string;
@@ -6,7 +6,7 @@ type NavlinksProps = {
   to: string;
 };
 
-export default function Navlink({ name, icon, to }: NavlinksProps) {
+export default function Navlink({ name, to }: NavlinksProps) {
   const location = useLocation();
   const isActive = location.pathname === to;
   return (

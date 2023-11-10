@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function RightButtons() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
   return (
     <Flex>
       <Button
